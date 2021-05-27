@@ -12,6 +12,7 @@ public class Profile {
 	private String work;
 	private String relationshipStatus;
 	public ArrayList<Post> profilePosts;
+	public ArrayList<Groups> profileGroups; 				// to be operatinal with Groups
 	
 	public Profile(String email, String password, String gender, int age, String userName) {
 		 this.gender = gender;
