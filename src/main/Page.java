@@ -1,4 +1,10 @@
-	public class Pages extends Groups{
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Pages extends Groups{
+
+	private ArrayList<String> recs  = new ArrayList<String>();	
+	
 
 	public void create() {
 
@@ -8,5 +14,16 @@
 		setAbout(about);
 		System.out.println("Set your page privacy");
 		setPrivacy(privacy);
+	}
+
+	public static String getName() {
+		return name;
+	}
+	public void addRecs() {
+		Scanner console = new Scanner(System.in);
+		System.out.println("What do you think about" + Pages.getName());  
+		String newRec = console.next();
+		recs.add(newRec);
+		System.out.println(newRec);
 	}
 	}
