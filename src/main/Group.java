@@ -29,9 +29,8 @@ public class Groups {
 	public void setPrivacy(String privacy) {
 		this.privacy = privacy;
 	}
-	public void follow(Profile newFollower) {
-																		// I think this should be in system.
-	}
+	public void follow(Profile newFollower, Groups group) {
+		newFollower.profileGroups.add(group);				//made it work
  
 	
 }
